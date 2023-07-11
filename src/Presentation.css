@@ -1,0 +1,175 @@
+.image-presentation {
+    border-radius: 50%;
+    width: 350px; /* Adjust the size as needed */
+    height: 350px; /* Adjust the size as needed */
+  }
+  .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11%;
+    font-family: 'Poppins', sans-serif;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content inside the flex container */
+    align-items: center; /* Vertically center the content inside the flex container */
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text vertically */
+    padding-left: 80px;
+  }
+  .text > p {
+    margin: 0; /* Remove the margin-bottom property */
+  }
+  .t1 {
+    color: #555055;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .t2 {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .t3 {
+    color: #555055;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-container > * {
+    margin-left: 8px;
+    border-radius: 25px;
+    margin-right: 8px;
+    height: 45px;
+    width: 120px;
+    color: #555055;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  .contact-info {
+    background: #555055;
+    color: white;
+    border: 2px solid white;
+  }
+  .download-cv {
+    background: white;
+    color: #555055;
+  }
+  .a-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    font-size: 30px;
+  }
+  .linkedin-icon {
+    padding-right: 15px;
+    text-decoration: none;
+  }
+  a {
+    color: black;
+  }
+  
+
+  @media (max-width: 1400px) {
+    .presentation {
+      align-items: center;
+    }
+  
+    .image-presentation {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 30px;
+      margin-right: 15px;
+    }
+  
+    .text {
+      padding-left: 0;
+      text-align: center;
+      margin-left: 15px;
+    }
+  
+    .button-container,
+    .a-container {
+      margin-top: 3%;
+    }
+  
+    .linkedin-icon {
+      padding-right: 10px;
+    }
+    .github-icon {
+      padding-left: 10px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .presentation {
+      align-items: center;
+    }
+  
+    .image-presentation {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .text {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .button-container,
+    .a-container {
+      margin-top: 3%;
+    }
+  
+    .linkedin-icon {
+      padding-right: 10px;
+    }
+    .github-icon {
+      padding-left: 10px;
+    }
+  }
+  @media (max-width: 600px) {  
+    .presentation {
+      flex-direction: column;
+    }
+    .image-presentation {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+    }
+  
+    .t2 {
+      font-size: 20px;
+    }
+  
+    .t3 {
+      font-size: 16px;
+    }
+  
+    .button-container > *,
+    .a-container {
+      width: 100%;
+    }
+    .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .button-container > *:not(:last-child) {
+      margin: 0;
+    }
+    .text {
+      margin: 0;
+      margin-top: 20px;
+    }
+  }

@@ -1,0 +1,137 @@
+.projects {
+    padding-top: 180px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .the-project {
+    border: 1.5px solid black;
+    width: 20%;
+    margin: 0 20px 0 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    overflow: hidden; 
+    padding: 30px;
+  }
+  
+  .project-image {
+    max-height: 240px;
+    max-width: 240px;
+    border-radius: 25px;
+  }
+  
+  .project-button-1 {
+    margin-right: 5px;
+    border-radius: 50px;
+    background: white;
+    height: 45px;
+    width: 110px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-button-1:hover {
+    transform: translateX(-5px);
+    background: #555055;
+    color: white;
+  }
+  
+  .project-button-2 {
+    margin-left: 5px;
+    border-radius: 50px;
+    background: white;
+    height: 45px;
+    width: 110px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-button-2:hover {
+    transform: translateX(-5px);
+    background: #555055;
+    color: white;
+  }
+  
+  .small-text {
+    text-align: center;
+    margin: 0;
+    color: #555055;
+  }
+  
+  .title-text {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  
+  .project-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .the-project {
+      width: 25%;
+      padding: 0;
+      padding: 20px 0 20px 0;
+    }
+  
+    .project-image {
+      max-height: 220px;
+      max-width: 220px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .the-project {
+      padding: 20px 0 20px 0;
+      width: 300px;
+    }
+  
+    .project-image {
+      max-height: 200px;
+      max-width: 200px;
+    }
+  
+    .flex-content {
+      gap: 30px;
+      flex-direction: column;
+    }
+    .project-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-button-1 {
+        margin: 0;
+    }
+    .project-button-2 {
+        margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .the-project {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .project-image {
+      max-height: 180px;
+      max-width: 180px;
+    }
+  
+    .flex-content {
+      gap: 30px;
+    }
+  }

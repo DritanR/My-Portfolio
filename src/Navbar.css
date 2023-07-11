@@ -1,0 +1,119 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers items vertically */
+    margin-top: 1%;
+    font-family: 'Poppins', serif;
+}
+
+.portfolio-name {
+    text-align: right; /* Aligns the paragraph to the right */
+    font-size: 30px; /* Increase the font size */
+    margin-left: 12%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navbar-elements {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start; /* Aligns the list items to the left */
+    gap: 30px; /* Increase the gap between list items */
+    margin-right: 15%;
+}
+
+.Navbar {
+    font-size: 22px; /* Increase the font size for list items */
+}
+.arrow {
+    float: right;
+    margin-right: 80px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .menu-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .navbar-elements-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-items {
+    display: flex;
+    gap: 20px;
+    display: none;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .portfolio-name {
+      font-size: 25px;
+      margin-left: 1%; 
+      margin-left: 180px;/* Adjust the margin for better spacing */
+    }
+  
+    .navbar-elements {
+      gap: 20px; /* Decrease the gap between list items */
+      margin-right: 1%; /* Adjust the margin for better spacing */
+      margin-right: 180px;
+    }
+  
+    .navbar-elements li {
+      font-size: 20px; /* Decrease the font size for list items */
+    }
+    
+  }
+  @media screen and (max-width: 1200px) {
+    .portfolio-name {
+        display: none;
+        margin: 0;
+    }
+    .portfolio-name-menu {
+        display: block;
+    }
+  
+    .navbar-elements {
+    display: none;
+    }
+    .menu-items {
+        display: block;
+    }
+    .flex-these {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+  }
+    .menu-icon {
+        font-size: 35px;
+    }
+  @media screen and (max-width: 600px) {
+    .portfolio-name {
+      font-size: 25px;/* Adjust the margin for better spacing */
+      margin: 0;
+    }
+  
+    .navbar-elements {
+    display: none;
+    }
+    .menu-items {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .menu-icon {
+        font-size: 35px;
+    }
+  }

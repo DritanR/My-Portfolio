@@ -1,0 +1,15 @@
+.hover {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.hover:hover {
+    transform: translateX(-5px);
+}
+.gray {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.gray:hover {
+    transform: translateX(-5px);
+    color: #555055;
+}

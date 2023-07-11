@@ -1,0 +1,193 @@
+.about-me {
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  img {
+    height: 350px;
+    width: 435px;
+    border-radius: 10%;
+  }
+  
+  .hole-content {
+    padding: 90px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  
+  .experience,
+  .education {
+    border: 1.5px solid #555055;
+    margin-right: 45px;
+    text-align: center;
+    width: 35%;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  
+  .borders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  
+  .right-content {
+    padding-left: 65px;
+  }
+  
+  .learn-text,
+  .aboutme-title {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .aboutme-text {
+    padding: 15px;
+    width: 85%;
+    color: #555055;
+    font-size: 15px;
+  }
+  
+  .experience-time,
+  .experience-type,
+  .education-degree,
+  .education-type,
+  .learn-text {
+    color: #555055;
+  }
+  
+  .aboutme-title {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+  
+  .education h2,
+  .experience h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 0 3px 0;
+  }
+  
+  .education p,
+  .experience p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .icon {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  
+  @media (max-width: 1400px) {
+    .hole-content {
+      align-items: center;
+      padding-top: 30px;
+      justify-content: center;
+    }
+  
+    .right-content {
+      padding-left: 0;
+    }
+  
+    .experience,
+    .education {
+      margin-right: 0;
+    }
+  
+    .arrow {
+      display: none;
+    }
+  
+    .borders {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+  
+    .aboutme-text {
+      margin-left: 40px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .hole-content {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .aboutme-title {
+      margin-top: 20px;
+    }
+  
+    .aboutme-image {
+      height: 250px;
+      width: 335px;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .right-content {
+      margin-top: 20px;
+    }
+  
+    .experience,
+    .education {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .aboutme-text {
+      margin-top: 20px;
+      margin: 0;
+    }
+  
+    .arrow {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .aboutme-title {
+      margin-top: 10px;
+      font-size: 32px;
+    }
+  
+    .aboutme-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  
+    .right-content {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .experience,
+    .education {
+        margin: 0;
+        height: 130px;
+    }
+  
+    .aboutme-text {
+      padding-top: 20px;
+      font-size: 14px;
+      text-align: justify;
+      margin: 0;
+    }
+  
+    .arrow {
+      display: none;
+    }
+  }
+  
