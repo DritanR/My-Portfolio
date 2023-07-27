@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Fade from 'react-reveal/Fade';
 import Typed from 'react-typed';
+import Resume from './resume.pdf'
 
 const Presentation = () => {
   const scrollToSection = (sectionId) => {
@@ -13,9 +14,9 @@ const Presentation = () => {
     section.scrollIntoView({ behavior: 'smooth' });
   };
 
-    return (
-        <div className="presentation">
-        <Helmet>
+  return (
+    <div className="presentation">
+      <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
@@ -24,37 +25,37 @@ const Presentation = () => {
         />
       </Helmet>
 
-        <Fade bottom>
+      <Fade bottom>
         <img className='image-presentation' src={Me} alt="My Image" />
-        </Fade>
+      </Fade>
 
-        <Fade bottom>
-            <section className='text'>
-                <p className='t1'>Hi, I'm</p>
-                <Typed
-   className="t2"
-   strings={['Dritan Rexhepi']}
-   typeSpeed={80}
-   backSpeed={50}
-   startDelay={500} // Delay before starting to type (in milliseconds)
-   backDelay={6000} // Delay after deleting before typing again (in milliseconds)
-   loop
-                />
-                <p className='t3'>Frontend Developer</p>
+      <Fade bottom>
+        <section className='text'>
+          <p className='t1'>Hi, I'm</p>
+          <Typed
+            className="t2"
+            strings={['Dritan Rexhepi']}
+            typeSpeed={80}
+            backSpeed={50}
+            startDelay={500} // Delay before starting to type (in milliseconds)
+            backDelay={6000} // Delay after deleting before typing again (in milliseconds)
+            loop
+          />
+          <p className='t3'>Full Stack Software Engineer</p>
 
-                <div className="button-container">
-                    <button className="download-cv hover"><a href=''>Download CV</a></button>
-                    <button className="contact-info hover" onClick={() => scrollToSection('contacts')}>Contact Info</button>
-                </div>
+          <div className="button-container">
+            <button className="download-cv hover"><a href = {Resume} download>Resume / Cv</a></button>
+            <button className="contact-info hover" onClick={() => scrollToSection('contacts')}>Contact Info</button>
+          </div>
 
-                <div className="a-container">
-                <a href='https://www.linkedin.com/in/dritan-rexhepi/'><FontAwesomeIcon icon={faLinkedin} className="linkedin-icon hover" /></a>
-                <a href='https://github.com/DritanR'><FontAwesomeIcon icon={faGithub} className="github-icon hover" /></a>
-                </div>
-            </section>
-            </Fade>
-            </div>
-    );
+          <div className="a-container">
+            <a href='https://www.linkedin.com/in/dritan-rexhepi/'><FontAwesomeIcon icon={faLinkedin} className="linkedin-icon hover" /></a>
+            <a href='https://github.com/DritanR'><FontAwesomeIcon icon={faGithub} className="github-icon hover" /></a>
+          </div>
+        </section>
+      </Fade>
+    </div>
+  );
 }
- 
+
 export default Presentation;
